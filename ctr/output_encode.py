@@ -1,6 +1,21 @@
+# This program reads a file from the first argument and obtain lists of
+# distinct field vales to encode them
+#
+# The fields are:
+# site_id
+# site_domain
+# site_category
+# app_id
+# app_domain
+# app_category
+# device_id
+# device_ip
+# device_model
+#
+# WARNING: Reading the whole file may occupy a huge amount of memory!
+
 import sys
 
-# site_id,site_domain,site_category,app_id,app_domain,app_category,device_id,device_ip,device_model
 def main():
     i = 0
     feature_lists = {"site_id_list": [], "site_domain_list": [], "site_category_list": [], \
